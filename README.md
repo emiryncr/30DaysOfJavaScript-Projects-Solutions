@@ -1,5 +1,5 @@
 # 30DaysOfJavaScript-Projects-Solutions
-This repository contains the project solutions of 30 Days of JavaScript, created by Asabeneh.
+This repository contains the project solutions of 30 Days of JavaScript, created by [Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript).
 ## CodePen links to play codes
 |Days| Links |
 |--|--|

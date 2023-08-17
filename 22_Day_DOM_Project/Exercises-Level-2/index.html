@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Countries List</title>
+    <style>
+        .header-content{
+            text-align: center;
+        }
+        .header-content h1{
+           font-size: 50px; 
+        }
+        .header-content h3{
+           font-size: 30px; 
+        }
+        .countries-list{
+            display: grid;
+            margin: 100px auto;
+            gap: 5px;
+            grid-template-columns: repeat(6, 1fr);
+            max-width: 1200px;
+            text-align: center;
+        }
+        .country{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0.185);
+            height: 80px;
+        }
+        @media (max-width:550px){
+            .header-content h1{
+           font-size: 30px; 
+        }
+        .countries-list{
+            margin-top: 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .country{
+            height: 60px;
+        }
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="header-content">
+        <h1>World Countries List</h1>
+        <h3 class="totalNumberOfCountries">Total Number of countries: </h3>
+        <p><a href="https://github.com/Asabeneh/30-Days-Of-JavaScript" target="_blank">30DaysOfJavaScript:DOM Day 2</a></p>
+        <a href="https://github.com/emiryncr" target="_blank">Author: Emir Yeniçeri</a>
+    </div>
+    <div class="countries-list">
+        
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

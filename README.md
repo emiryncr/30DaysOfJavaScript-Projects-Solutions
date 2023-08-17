@@ -4,7 +4,7 @@ This repository contains the project solutions of 30 Days of JavaScript, created
 |Days| Links |
 |--|--|
 | Day 21 | https://codepen.io/emir-yncr/pen/wvQVbZO |
-| Day 22 | [Exercise 1](https://codepen.io/emir-yncr/full/bGObJKW), |
+| Day 22 | [Exercise 1](https://codepen.io/emir-yncr/full/bGObJKW), [Exercise 2](https://codepen.io/emir-yncr/full/VwqZJdG)|
 | Day 23 | |
 | Day 24 | |
 | Day 25 | |

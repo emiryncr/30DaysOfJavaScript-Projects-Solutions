@@ -3,32 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day-21-DOM</title>
-    <link rel="script" href="script.js">
+    <title>Day-22-DOM Level 3</title>
     <style>
       * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0 10px;
       }
-      .warning {
-        display: none;
-      }
-      body {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-      }
-      .wrapper {
+      .header-content{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-      }
-      .challenges {
-        list-style: none;
-        padding: 20px;
-        margin: 2px;
-        background: pink;
-        width: 50rem;
-        font-size: 17px;
+        gap: 20px;
       }
       h1 {
         font-size: 40px;
@@ -36,81 +23,87 @@
       #styledYear {
         font-size: 100px;
       }
-      h2 {
-        font-size: 24px;
-        text-decoration: underline;
+      .date{
+        border-radius: 20px;
       }
-      .date {
-        padding: 5px 15px;
+      .challenges-list{
+        max-width: 1200px;
+        margin: 20px auto;
+        list-style: none;
+      }
+      .challenges{
+        padding: 20px 5px;
+        margin: 5px 0;
+        font-size: 20px;
+      }
+      
+      @media (max-width: 630px){
+        * {
+        padding: 0 2px;
+      }
+        h1 {
         font-size: 15px;
-        width: 155px;
       }
-      @media only screen and (max-width: 880px) {
-        body {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-          row-gap: 20px;
-        }
-        .wrapper {
-          display: none;
-        }
-        .warning {
-          display: block;
-          text-align: center;
-          background: tomato;
-          padding: 5px;
-          font-size: larger;
-        }
+      #styledYear {
+        font-size: 35px;
       }
+      h2{
+        font-size: 15px;
+      }
+      .challenges{
+        padding: 10px 5px;
+        font-size: 10px;
+      }
+      }
+
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <h1>
-        30DaysOfJavaScript challenges in <span id="styledYear">2023</span>
-      </h1>
-
-      <h2>30DaysOfJavaScript Challenge</h2>
-
-      <p class="date">00.00.0000 00:00:00</p>
-
-      <ul class="challenges-list">
-        <li class="challenges done" id="Python">
-          30DaysOfPython Challenge Done
-        </li>
-        <li class="challenges ongoing" id="JavaScript">
-          30DaysOfJavaScript Challenge Ongoing
-        </li>
-        <li class="challenges coming" id="React">
-          30DaysOfReact Challenge Coming
-        </li>
-        <li class="challenges coming" id="FullStack">
-          30DaysOfFullStack Challenge Coming
-        </li>
-        <li class="challenges coming" id="DataAnalysis">
-          30DaysOfDataAnalysis Challenge Coming
-        </li>
-        <li class="challenges coming" id="ReactNative">
-          30DaysOfReactNative Challenge Coming
-        </li>
-        <li class="challenges coming" id="MachineLearning">
-          30DaysOfMachineLearning Challenge Coming
-        </li>
-      </ul>
+      
+      <div class="header-content">
+        <h1>
+          30DaysOfJavaScript challenges in <span id="styledYear">2023</span>
+        </h1>
+  
+        <h2>30DaysOfJavaScript Challenge</h2>
+  
+        <p class="date">00.00.0000 00:00:00</p>
+      </div>
+        
+          <ul class="challenges-list">
+            <li class="challenges done" id="Python">
+              30DaysOfPython Challenge Done
+            </li>
+            <li class="challenges ongoing" id="JavaScript">
+              30DaysOfJavaScript Challenge Ongoing
+            </li>
+            <li class="challenges coming" id="React">
+              30DaysOfReact Challenge Coming
+            </li>
+            <li class="challenges coming" id="FullStack">
+              30DaysOfFullStack Challenge Coming
+            </li>
+            <li class="challenges coming" id="DataAnalysis">
+              30DaysOfDataAnalysis Challenge Coming
+            </li>
+            <li class="challenges coming" id="ReactNative">
+              30DaysOfReactNative Challenge Coming
+            </li>
+            <li class="challenges coming" id="MachineLearning">
+              30DaysOfMachineLearning Challenge Coming
+            </li>
+          </ul>
+      
     </div>
 
-    <div class="warning">
-      YOU CAN'T SEE THIS PROJECT BCZ IT IS NOT RESPONSIVE,YOUR SCREEN SHOULD BE
-      BIGGER THEN 880PX WIDTH
-    </div>
 
     <div class="githubProfile">
       <a href="https://github.com/emiryncr" target="_blank"
         >My GitHub Profile</a
       >
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,11 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenges</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-22-DOM Level 3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 10px;
+      }
+      .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      #styledYear {
+        font-size: 100px;
+      }
+      .date {
+        border-radius: 20px;
+      }
+      .challenges-list {
+        max-width: 1200px;
+        margin: 20px auto;
+        list-style: none;
+      }
+      .challenges {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 5px;
+        margin: 5px 0;
+        font-size: 25px;
+      }
+      .github-profile {
+        text-align: center;
+      }
+      .github-profile h2,
+      a {
+        color: black;
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px auto;
+        line-height: 20px;
+        column-gap: 100px;
+      }
+      .skills h4 {
+        line-height: 30px;
+      }
+      .keywords {
+        display: grid;
+        justify-content: center;
+        row-gap: 20px;
+        margin-bottom: 40px;
+      }
+      .key-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        gap: 4px;
+      }
+      .keyword {
+        border-radius: 10px;
+      }
+
+      @media (max-width: 630px) {
+        * {
+          padding: 0 2px;
+        }
+        h1 {
+          font-size: 15px;
+        }
+        #styledYear {
+          font-size: 35px;
+        }
+        h2 {
+          font-size: 15px;
+        }
+        .challenges {
+          padding: 10px 5px;
+          font-size: 13px;
+        }
+        .github-profile a {
+          font-size: 20px;
+        }
+        .github-profile p {
+          font-size: 10px;
+        }
+        .skills {
+          font-size: 12px;
+          column-gap: 20px;
+          margin-bottom: 35px;
+        }
+        .keyword {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-content">
+        <h1>
+          30DaysOfJavaScript challenges in <span id="styledYear">2023</span>
+        </h1>
+
+        <h2>30DaysOfJavaScript Challenge</h2>
+
+        <p class="date">00.00.0000 00:00:00</p>
+      </div>
+
+      <ul class="challenges-list">
+        <li class="challenges done" id="Python">
+          <div class="challenge-header">30DaysOfPython</div>
+          <details>
+            <summary>Python</summary>
+            <p>NumPy</p>
+            <p>Pandas</p>
+            <p>Matplotlib</p>
+            <p>Scikit-learn</p>
+            <p>Jupyter Notebook</p>
+          </details>
+          <div class="stat">Done</div>
+        </li>
+
+        <li class="challenges ongoing" id="JavaScript">
+          <div class="challenge-header">30DaysOfJavaScript</div>
+          <details>
+            <summary>JavaScript</summary>
+            <p>React</p>
+            <p>Node.js</p>
+            <p>Vue.js</p>
+            <p>Express.js</p>
+            <p>Webpack</p>
+          </details>
+          <div class="stat">Ongoing</div>
+        </li>
+
+        <li class="challenges coming" id="React">
+          <div class="challenge-header">30DaysOfReact</div>
+          <details>
+            <summary>React</summary>
+            <p>React Router</p>
+            <p>Redux</p>
+            <p>Styled Components</p>
+            <p>React Native</p>
+            <p>Next.js</p>
+          </details>
+          <div class="stat">Coming</div>
+        </li>
+
+        <li class="challenges coming" id="FullStack">
+          <div class="challenge-header">30DaysOfFullStack</div>
+          <details>
+            <summary>FullStack</summary>
+            <p>Frontend Development</p>
+            <p>Backend Development</p>
+            <p>API Development</p>
+            <p>Databases</p>
+            <p>Authentication & Authorization</p>
+          </details>
+          <div class="stat">Coming</div>
+        </li>
+
+        <li class="challenges coming" id="DataAnalysis">
+          <div class="challenge-header">30DaysOfDataAnalysis</div>
+          <details>
+            <summary>Data Analysis</summary>
+            <p>Pandas</p>
+            <p>NumPy</p>
+            <p>Matplotlib</p>
+            <p>Seaborn</p>
+            <p>Statistics</p>
+          </details>
+          <div class="stat">Coming</div>
+        </li>
+
+        <li class="challenges coming" id="ReactNative">
+          <div class="challenge-header">30DaysOfReactNative</div>
+          <details>
+            <summary>React Native</summary>
+            <p>Components</p>
+            <p>Navigation</p>
+            <p>State Management</p>
+            <p>API Integration</p>
+            <p>Styling</p>
+          </details>
+          <div class="stat">Coming</div>
+        </li>
+
+        <li class="challenges coming" id="MachineLearning">
+          <div class="challenge-header">30DaysOfMachineLearning</div>
+          <details>
+            <summary>Machine Learning</summary>
+            <p>Supervised Learning</p>
+            <p>Unsupervised Learning</p>
+            <p>Feature Engineering</p>
+            <p>Model Evaluation</p>
+            <p>Deployment</p>
+          </details>
+          <div class="stat">Coming</div>
+        </li>
+      </ul>
+
+      <div class="github-profile">
+        <h2>
+          <a href="https://github.com/emiryncr" target="_blank"
+            >Emir Yeniçeri</a
+          >
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero atque,
+          tempora sunt neque quisquam quo asperiores id ut non aliquid earum
+          est.
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="skills">
+        <div>
+          <h4>Titles</h4>
+          <p>Programmer</p>
+          <p>Developer</p>
+        </div>
+        <div>
+          <h4>Skills</h4>
+          <p>Web Development</p>
+          <p>Programming</p>
+        </div>
+        <div>
+          <h4>Qualifications</h4>
+          <p>Computer Science</p>
+          <p>Information Technologies</p>
+        </div>
+      </div>
+
+      <div class="keywords">
+        <h2>Keywords</h2>
+        <div class="key-list">
+          <div class="keyword">#css</div>
+          <div class="keyword">#html</div>
+          <div class="keyword">#js</div>
+          <div class="keyword">#programming</div>
+          <div class="keyword">#webdevelopment</div>
+          <div class="keyword">#frontend</div>
+          <div class="keyword">#backend</div>
+          <div class="keyword">#design</div>
+          <div class="keyword">#code</div>
+          <div class="keyword">#developer</div>
+          <div class="keyword">#software</div>
+          <div class="keyword">#coding</div>
+          <div class="keyword">#database</div>
+          <div class="keyword">#mobileapp</div>
+          <div class="keyword">#framework</div>
+          <div class="keyword">#debugging</div>
+          <div class="keyword">#algorithms</div>
+          <div class="keyword">#dataanalysis</div>
+          <div class="keyword">#machinelearning</div>
+          <div class="keyword">#artificialintelligence</div>
+          <div class="keyword">#userexperience</div>
+          <div class="keyword">#testing</div>
+          <div class="keyword">#security</div>
+          <div class="keyword">#agile</div>
+          <div class="keyword">#versioncontrol</div>
+          <div class="keyword">#cloud</div>
+          <div class="keyword">#deployment</div>
+          <div class="keyword">#responsive</div>
+          <div class="keyword">#optimization</div>
+          <div class="keyword">#mobilefirst</div>
+          <div class="keyword">#automation</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

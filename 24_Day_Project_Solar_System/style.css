@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;
+    background-image: url(https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/24_Day_Project_solar_system/24_day_starter/images/galaxy.gif?raw=true);
     color: #fff;
 }
 
@@ -38,6 +38,7 @@ main{
     padding: 20px 10px;
     margin: 40px 0;
     background: rgba(255, 255, 255, 0.1);
+    min-height: 544px;
 }
 
  .img-content{
@@ -54,21 +55,52 @@ main{
     justify-content: center;
     flex-direction: column;
     background-clip: content-box;
-    height: 200px;
+    max-height: 187px;
+
 } 
 
 .result-content h3{
     color: #fff;
+    padding: 10px;
 }
 
 .result-content .result-circle{
     background: rgba(255, 255, 255, 0.1);
     padding: 35px 20px;
     border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.result-content .result-circle span{
+    font-style: italic;
+}
+
+.required-msg h1{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+strong{
+    font-size: 22px;
+}
+
+footer{
+    font-size: 20px;
+}
+
+footer a{
+    color: bisque;
+}
+footer a:hover{
+    color: #fff;
 }
 
 
-@media (max-width:625px){
+@media (max-width:800px){
+    header h1{
+        font-size: 25px;
+    }
     .calculate *{
         height: 30px;
         font-size: 12px;

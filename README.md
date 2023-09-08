@@ -1,5 +1,5 @@
 # 30DaysOfJavaScript-Projects-Solutions
-This repository contains the project solutions of 30 Days of JavaScript, created by [Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript).
+This repository contains the project solutions of 30 Days of JavaScript. Exercises created by [Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript).
 > The repository prepared by me aims to provide assistance to beginners and also aims to improve my skills.
 ## Links to View or Execute Codes
 |Days| Links |

@@ -8,7 +8,7 @@ This repository contains the project solutions of 30 Days of JavaScript, created
 | Day 22 | [Exercise 1](https://codepen.io/emir-yncr/full/bGObJKW), [Exercise 2](https://codepen.io/emir-yncr/full/VwqZJdG) , [Exercise 3](https://codepen.io/emir-yncr/full/oNJNBKP)|
 | Day 23 | [Execise 1](https://codepen.io/emir-yncr/full/poqvYJG), [Exercise 2](https://codepen.io/emir-yncr/full/BavjzLR) |
 | Day 24 | https://codepen.io/emir-yncr/full/rNoxLxq |
-| Day 25 | |
+| Day 25 |https://codepen.io/emir-yncr/full/eYbvYPd |
 | Day 26 | |
 | Day 27 | |
 | Day 28 | |
